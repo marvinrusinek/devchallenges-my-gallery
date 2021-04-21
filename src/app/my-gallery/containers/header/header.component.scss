@@ -1,0 +1,119 @@
+@import "../../styles/variables";
+
+header {
+  text-align: center;
+
+  .profile {
+    margin: 42px 242px 0 219px;
+
+    .profile-photo {
+      margin: 0 auto;
+      display: block;
+
+      img {
+        height: 110px;
+        border-radius: 16px;
+      }
+    }
+
+    h2, h5 {
+      text-align: center;
+    }
+
+    h2 {
+      font: 600 24px "Montserrat", sans-serif;
+      color: $cape-cod;
+    }
+
+    h5 {
+      font: 600 14px "Montserrat", sans-serif;
+      color: $light-gray;
+    }
+  }
+
+  .profile-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+
+    .metadata-container {
+      background-color: $very-light-gray;
+      border-radius: 12px;
+      padding: 10px 30px;
+      margin: auto 24px;
+      width: 100px;
+      height: 67px;
+
+      .metadata-wrapper {
+        margin-top: 15px;
+
+        .number {
+          font: 600 18px "Montserrat", sans-serif;
+          color: $cape-cod;
+          margin-top: 40px;
+         }
+
+        .profile-metadata {
+          font: 600 14px "Montserrat", sans-serif;
+          color: $silver;
+          display: block;
+        }
+
+        .number, .profile-metadata {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  header {
+    margin-top: 18px;
+
+    .profile {
+      margin: 18px 50px 0 64px;
+
+      .profile-image {
+        width: 30%;
+        height: 30%;
+      }
+
+      h2 {
+        font: 600 14px "Montserrat", sans-serif;
+        color: $cape-cod;
+        text-align: center;
+      }
+
+      h5 {
+        font: 600 10px "Montserrat", sans-serif;
+        color: $light-gray;
+        text-align: center;
+      }
+    }
+
+    .profile-stats {
+      width: 78px;
+      height: 52px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .metadata-wrapper {
+        .number, .profile-metadata {
+          font: 600 12px "Montserrat", sans-serif;
+          text-align: center;
+        }
+
+        .number {
+          color: $cape-cod;
+        }
+
+        .profile-metadata {
+          color: $silver;
+        }
+      }
+    }
+  }
+}
